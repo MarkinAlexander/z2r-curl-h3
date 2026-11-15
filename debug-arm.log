@@ -1,0 +1,34 @@
+== toolchain arm-linux-musleabihf
+== openssl 3.5.4 (linux-armv4 )
+DEBUG: all keys: APPLINKDIR, BINDIR, CMAKECONFIGDIR, ENGINESDIR, INCLUDEDIR, LDLIBS, LIBDIR, MODULESDIR, PKGCONFIGDIR, PREFIX, VERSION, libdir
+No value given for CMAKECONFIGDIR
+No value given for PKGCONFIGDIR
+No value given for libdir
+DEBUG: PREFIX = . => PREFIX = /home/runner/work/z2r-curl-h3/z2r-curl-h3/.build/openssl-3.5.4
+DEBUG: libdir = . => libdir = /home/runner/work/z2r-curl-h3/z2r-curl-h3/.build/openssl-3.5.4
+DEBUG: BINDIR = apps => BINDIR = /home/runner/work/z2r-curl-h3/z2r-curl-h3/.build/openssl-3.5.4/apps, BINDIR_REL_PREFIX = apps
+DEBUG: LIBDIR =  => LIBDIR = /home/runner/work/z2r-curl-h3/z2r-curl-h3/.build/openssl-3.5.4, LIBDIR_REL_PREFIX = 
+DEBUG: INCLUDEDIR = [ include, ./include ] => INCLUDEDIR = [ /home/runner/work/z2r-curl-h3/z2r-curl-h3/.build/openssl-3.5.4/include, /home/runner/work/z2r-curl-h3/z2r-curl-h3/.build/openssl-3.5.4/include ], INCLUDEDIR_REL_PREFIX = [ include, ./include ]
+DEBUG: APPLINKDIR = ms => APPLINKDIR = /home/runner/work/z2r-curl-h3/z2r-curl-h3/.build/openssl-3.5.4/ms, APPLINKDIR_REL_PREFIX = ms
+DEBUG: ENGINESDIR = engines => ENGINESDIR = /home/runner/work/z2r-curl-h3/z2r-curl-h3/.build/openssl-3.5.4/engines, ENGINESDIR_REL_LIBDIR = engines
+DEBUG: MODULESDIR = providers => MODULESDIR = /home/runner/work/z2r-curl-h3/z2r-curl-h3/.build/openssl-3.5.4/providers, MODULESDIR_REL_LIBDIR = providers
+DEBUG: PKGCONFIGDIR = . => PKGCONFIGDIR = /home/runner/work/z2r-curl-h3/z2r-curl-h3/.build/openssl-3.5.4, PKGCONFIGDIR_REL_LIBDIR = .
+DEBUG: CMAKECONFIGDIR = . => CMAKECONFIGDIR = /home/runner/work/z2r-curl-h3/z2r-curl-h3/.build/openssl-3.5.4, CMAKECONFIGDIR_REL_LIBDIR = .
+DEBUG: all keys: APPLINKDIR, BINDIR, CMAKECONFIGDIR, ENGINESDIR, INCLUDEDIR, LDLIBS, LIBDIR, MODULESDIR, PKGCONFIGDIR, PREFIX, VERSION, libdir
+DEBUG: PREFIX = /home/runner/work/z2r-curl-h3/z2r-curl-h3/.build/stage => PREFIX = /home/runner/work/z2r-curl-h3/z2r-curl-h3/.build/stage
+DEBUG: libdir = /home/runner/work/z2r-curl-h3/z2r-curl-h3/.build/stage/lib => libdir = /home/runner/work/z2r-curl-h3/z2r-curl-h3/.build/stage/lib
+DEBUG: BINDIR = bin => BINDIR = /home/runner/work/z2r-curl-h3/z2r-curl-h3/.build/stage/bin, BINDIR_REL_PREFIX = bin
+DEBUG: LIBDIR = lib => LIBDIR = /home/runner/work/z2r-curl-h3/z2r-curl-h3/.build/stage/lib, LIBDIR_REL_PREFIX = lib
+DEBUG: INCLUDEDIR = include => INCLUDEDIR = /home/runner/work/z2r-curl-h3/z2r-curl-h3/.build/stage/include, INCLUDEDIR_REL_PREFIX = include
+DEBUG: APPLINKDIR = include/openssl => APPLINKDIR = /home/runner/work/z2r-curl-h3/z2r-curl-h3/.build/stage/include/openssl, APPLINKDIR_REL_PREFIX = include/openssl
+DEBUG: ENGINESDIR = /home/runner/work/z2r-curl-h3/z2r-curl-h3/.build/stage/lib/engines-3 => ENGINESDIR = /home/runner/work/z2r-curl-h3/z2r-curl-h3/.build/stage/lib/engines-3, ENGINESDIR_REL_LIBDIR = engines-3
+DEBUG: MODULESDIR = /home/runner/work/z2r-curl-h3/z2r-curl-h3/.build/stage/lib/ossl-modules => MODULESDIR = /home/runner/work/z2r-curl-h3/z2r-curl-h3/.build/stage/lib/ossl-modules, MODULESDIR_REL_LIBDIR = ossl-modules
+DEBUG: PKGCONFIGDIR = /home/runner/work/z2r-curl-h3/z2r-curl-h3/.build/stage/lib/pkgconfig => PKGCONFIGDIR = /home/runner/work/z2r-curl-h3/z2r-curl-h3/.build/stage/lib/pkgconfig, PKGCONFIGDIR_REL_LIBDIR = pkgconfig
+DEBUG: CMAKECONFIGDIR = /home/runner/work/z2r-curl-h3/z2r-curl-h3/.build/stage/lib/cmake/OpenSSL => CMAKECONFIGDIR = /home/runner/work/z2r-curl-h3/z2r-curl-h3/.build/stage/lib/cmake/OpenSSL, CMAKECONFIGDIR_REL_LIBDIR = cmake/OpenSSL
+== nghttp3 1.12.0
+configure: WARNING: using cross tools not prefixed with host triplet
+== curl 8.16.0
+configure: WARNING: using cross tools not prefixed with host triplet
+configure: WARNING: zlib disabled
+configure: WARNING: the previous check could not be made default was used
+configure: error: --with-openssl was given but OpenSSL could not be detected
