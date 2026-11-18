@@ -137,6 +137,26 @@ fi
 
 "${TC}strip" "stage/bin/curl"
 
+# --- Гард MIPS ABI: только soft-float (v1 собирался hard-float тулчейном) ------
+# История: musl.cc-тулчейны *-musl* для mips/mipsel — hard-float по умолчанию;
+# на роутерах без FPU (MT7621 и пр.) это SIGILL или медленная FPU-эмуляция
+# ядром. Правильный тулчейн — отдельный *-muslsf* (см. PR #1). Гард до UPX:
+# UPX-стаб не несёт .MIPS.abiflags, после упаковки ABI не проверить.
+case "$ARCH" in
+    mipsel|mipssf)
+        if command -v readelf >/dev/null 2>&1; then
+            if LC_ALL=C readelf -A "stage/bin/curl" | grep -q "FP ABI: Soft float"; then
+                echo "== fp_abi: Soft float — OK"
+            else
+                LC_ALL=C readelf -A "stage/bin/curl" | grep "FP ABI" >&2 || :
+                echo "build.sh: MIPS-бинарник не soft-float — не тот тулчейн, стоп" >&2
+                exit 1
+            fi
+        else
+            echo "build.sh: readelf недоступен — ABI-гард пропущен" >&2
+        fi ;;
+esac
+
 # --- UPX: где поддержан — упаковываем (мавг-паттерн: не поддержал — едем без) -
 BIN="$OUT/z2r-curl-h3-linux-$ARCH"
 cp -f "stage/bin/curl" "$BIN"
